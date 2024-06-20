@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alkohol-Effizienz-Rechner</title>
-    <link rel="st   aylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>Alkohol-Effizienz-Rechner</h1>
         <form id="effizienzForm">
-            <label for="alkoholgehalt">Alkoholgehalt (%)</label>
-            <input type="number" id="alkoholgehalt" name="alkoholgehalt" step="0.1" required>
-            
-            <label for="volumen">Volumen (Liter)</label>
-            <input type="number" id="volumen" name="volumen" step="0.1" required>
-            
-            <label for="preis">Preis (€)</label>
-            <input type="number" id="preis" name="preis" step="0.01" required>
-            
+            <div class="input-group">
+                <label for="alkoholgehalt">Alkoholgehalt (%)</label>
+                <input type="text" id="alkoholgehalt" name="alkoholgehalt" required>
+            </div>
+            <div class="input-group">
+                <label for="volumen">Volumen (Liter)</label>
+                <input type="text" id="volumen" name="volumen" required>
+            </div>
+            <div class="input-group">
+                <label for="preis">Preis (€)</label>
+                <input type="text" id="preis" name="preis" required>
+            </div>
             <button type="button" onclick="berechneEffizienz()">Berechnen</button>
         </form>
         <div id="ergebnis"></div>
